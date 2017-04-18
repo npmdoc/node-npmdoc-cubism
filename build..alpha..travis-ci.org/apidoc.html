@@ -1,0 +1,1860 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://square.github.com/cubism/"
+
+    >cubism (v1.6.0)</a>
+</h1>
+<h4>A JavaScript library for time series visualization.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cubism">module cubism</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context">
+            function <span class="apidocSignatureSpan">cubism.</span>context
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric">
+            function <span class="apidocSignatureSpan">cubism.</span>metric
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.option">
+            function <span class="apidocSignatureSpan">cubism.</span>option
+            <span class="apidocSignatureSpan">(name, defaultValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.options">
+            function <span class="apidocSignatureSpan">cubism.</span>options
+            <span class="apidocSignatureSpan">(name, defaultValues)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cubism.</span>context.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cubism.</span>metric.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">cubism.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cubism.context">module cubism.context</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.context">
+            function <span class="apidocSignatureSpan">cubism.</span>context
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cubism.context.prototype">module cubism.context.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.axis">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>axis
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.comparison">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>comparison
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.constant">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>constant
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.cube">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>cube
+            <span class="apidocSignatureSpan">(host)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.gangliaWeb">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>gangliaWeb
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.graphite">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>graphite
+            <span class="apidocSignatureSpan">(host)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.horizon">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>horizon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.librato">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>librato
+            <span class="apidocSignatureSpan">(user, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.metric">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>metric
+            <span class="apidocSignatureSpan">(request, name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.context.prototype.rule">
+            function <span class="apidocSignatureSpan">cubism.context.prototype.</span>rule
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cubism.metric">module cubism.metric</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.metric">
+            function <span class="apidocSignatureSpan">cubism.</span>metric
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cubism.metric.prototype">module cubism.metric.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.add">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>add
+            <span class="apidocSignatureSpan">(right)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.alias">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>alias
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.divide">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>divide
+            <span class="apidocSignatureSpan">(right)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.extent">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>extent
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.multiply">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>multiply
+            <span class="apidocSignatureSpan">(right)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.on">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>on
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.shift">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>shift
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.subtract">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>subtract
+            <span class="apidocSignatureSpan">(right)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cubism.metric.prototype.valueAt">
+            function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>valueAt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cubism" id="apidoc.module.cubism">module cubism</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context" id="apidoc.element.cubism.context">
+        function <span class="apidocSignatureSpan">cubism.</span>context
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">context = function () {
+  var context = new cubism_context,
+      step = 1e4, // ten seconds, in milliseconds
+      size = 1440, // four hours at ten seconds, in pixels
+      start0, stop0, // the start and stop for the previous change event
+      start1, stop1, // the start and stop for the next prepare event
+      serverDelay = 5e3,
+      clientDelay = 5e3,
+      event = d3.dispatch(&#x22;prepare&#x22;, &#x22;beforechange&#x22;, &#x22;change&#x22;, &#x22;focus&#x22;),
+      scale = context.scale = d3.time.scale().range([0, size]),
+      timeout,
+      focus;
+
+  function update() {
+    var now = Date.now();
+    stop0 = new Date(Math.floor((now - serverDelay - clientDelay) / step) * step);
+    start0 = new Date(stop0 - size * step);
+    stop1 = new Date(Math.floor((now - serverDelay) / step) * step);
+    start1 = new Date(stop1 - size * step);
+    scale.domain([start0, stop0]);
+    return context;
+  }
+
+  context.start = function() {
+    if (timeout) clearTimeout(timeout);
+    var delay = +stop1 + serverDelay - Date.now();
+
+    // If we&#x27;re too late for the first prepare event, skip it.
+    if (delay &#x3c; clientDelay) delay += step;
+
+    timeout = setTimeout(function prepare() {
+      stop1 = new Date(Math.floor((Date.now() - serverDelay) / step) * step);
+      start1 = new Date(stop1 - size * step);
+      event.prepare.call(context, start1, stop1);
+
+      setTimeout(function() {
+        scale.domain([start0 = start1, stop0 = stop1]);
+        event.beforechange.call(context, start1, stop1);
+        event.change.call(context, start1, stop1);
+        event.focus.call(context, focus);
+      }, clientDelay);
+
+      timeout = setTimeout(prepare, step);
+    }, delay);
+    return context;
+  };
+
+  context.stop = function() {
+    timeout = clearTimeout(timeout);
+    return context;
+  };
+
+  timeout = setTimeout(context.start, 10);
+
+  // Set or get the step interval in milliseconds.
+  // Defaults to ten seconds.
+  context.step = function(_) {
+    if (!arguments.length) return step;
+    step = +_;
+    return update();
+  };
+
+  // Set or get the context size (the count of metric values).
+  // Defaults to 1440 (four hours at ten seconds).
+  context.size = function(_) {
+    if (!arguments.length) return size;
+    scale.range([0, size = +_]);
+    return update();
+  };
+
+  // The server delay is the amount of time we wait for the server to compute a
+  // metric. This delay may result from clock skew or from delays collecting
+  // metrics from various hosts. Defaults to 4 seconds.
+  context.serverDelay = function(_) {
+    if (!arguments.length) return serverDelay;
+    serverDelay = +_;
+    return update();
+  };
+
+  // The client delay is the amount of additional time we wait to fetch those
+  // metrics from the server. The client and server delay combined represent the
+  // age of the most recent displayed metric. Defaults to 1 second.
+  context.clientDelay = function(_) {
+    if (!arguments.length) return clientDelay;
+    clientDelay = +_;
+    return update();
+  };
+
+  // Sets the focus to the specified index, and dispatches a &#x22;focus&#x22; event.
+  context.focus = function(i) {
+    event.focus.call(context, focus = i);
+    return context;
+  };
+
+  // Add, remove or get listeners for events.
+  context.on = function(type, listener) {
+    if (arguments.length &#x3c; 2) return event.on(type);
+
+    event.on(type, listener);
+
+    // Notify the listener of the current start and stop time, as appropriate.
+    // This way, metrics can make requests for data immediately,
+    // and likewise the axis can display itself synchronously.
+    if (listener != null) {
+      if (/^prepare(\.|$)/.test(type)) listener.call(context, start1, stop1);
+      if (/^beforechange(\.|$)/.test(type)) listener.call(context, start0, stop0);
+      if (/^change(\.|$)/.test(type)) listener.call(context, start0, stop0);
+      if (/^focus(\.|$)/.test(type)) listener.call(context, focus);
+    }
+
+    return context;
+  };
+
+  d3.select(window).on(&#x22;keydown.context-&#x22; + ++cubism_id, function() {
+    switch (!d3.event.metaKey &#x26;&#x26; d3.event.keyCode) {
+      case 37: // left
+        if (focus == null) focus = size - 1;
+        if (focus &#x3e; 0) context.focus ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric" id="apidoc.element.cubism.metric">
+        function <span class="apidocSignatureSpan">cubism.</span>metric
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cubism_metric(context) {
+  if (!(context instanceof cubism_context)) throw new Error(&#x22;invalid context&#x22;);
+  this.context = context;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+cubism_contextPrototype.cube = function(host) {
+if (!arguments.length) host = &#x22;&#x22;;
+var source = {},
+    context = this;
+
+source.metric = function(expression) {
+  return context.<span class="apidocCodeKeywordSpan">metric</span>(function(start, stop, step, callback) {
+    d3.json(host + &#x22;/1.0/metric&#x22;
+        + &#x22;?expression=&#x22; + encodeURIComponent(expression)
+        + &#x22;&#x26;start=&#x22; + cubism_cubeFormatDate(start)
+        + &#x22;&#x26;stop=&#x22; + cubism_cubeFormatDate(stop)
+        + &#x22;&#x26;step=&#x22; + step, function(data) {
+      if (!data) return callback(new Error(&#x22;unable to load data&#x22;));
+      callback(null, data.map(function(d) { return d.value; }));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.option" id="apidoc.element.cubism.option">
+        function <span class="apidocSignatureSpan">cubism.</span>option
+        <span class="apidocSignatureSpan">(name, defaultValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">option = function (name, defaultValue) {
+  var values = cubism.options(name);
+  return values.length ? values[0] : defaultValue;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.options" id="apidoc.element.cubism.options">
+        function <span class="apidocSignatureSpan">cubism.</span>options
+        <span class="apidocSignatureSpan">(name, defaultValues)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">options = function (name, defaultValues) {
+  var options = location.search.substring(1).split(&#x22;&#x26;&#x22;),
+      values = [],
+      i = -1,
+      n = options.length,
+      o;
+  while (++i &#x3c; n) {
+    if ((o = options[i].split(&#x22;=&#x22;))[0] == name) {
+      values.push(decodeURIComponent(o[1]));
+    }
+  }
+  return values.length || arguments.length &#x3c; 2 ? values : defaultValues;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+(function(exports){
+var cubism = exports.cubism = {version: &#x22;1.6.0&#x22;};
+var cubism_id = 0;
+function cubism_identity(d) { return d; }
+cubism.option = function(name, defaultValue) {
+var values = cubism.<span class="apidocCodeKeywordSpan">options</span>(name);
+return values.length ? values[0] : defaultValue;
+};
+
+cubism.options = function(name, defaultValues) {
+var options = location.search.substring(1).split(&#x22;&#x26;&#x22;),
+    values = [],
+    i = -1,
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cubism.context" id="apidoc.module.cubism.context">module cubism.context</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.context" id="apidoc.element.cubism.context.context">
+        function <span class="apidocSignatureSpan">cubism.</span>context
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">context = function () {
+  var context = new cubism_context,
+      step = 1e4, // ten seconds, in milliseconds
+      size = 1440, // four hours at ten seconds, in pixels
+      start0, stop0, // the start and stop for the previous change event
+      start1, stop1, // the start and stop for the next prepare event
+      serverDelay = 5e3,
+      clientDelay = 5e3,
+      event = d3.dispatch(&#x22;prepare&#x22;, &#x22;beforechange&#x22;, &#x22;change&#x22;, &#x22;focus&#x22;),
+      scale = context.scale = d3.time.scale().range([0, size]),
+      timeout,
+      focus;
+
+  function update() {
+    var now = Date.now();
+    stop0 = new Date(Math.floor((now - serverDelay - clientDelay) / step) * step);
+    start0 = new Date(stop0 - size * step);
+    stop1 = new Date(Math.floor((now - serverDelay) / step) * step);
+    start1 = new Date(stop1 - size * step);
+    scale.domain([start0, stop0]);
+    return context;
+  }
+
+  context.start = function() {
+    if (timeout) clearTimeout(timeout);
+    var delay = +stop1 + serverDelay - Date.now();
+
+    // If we&#x27;re too late for the first prepare event, skip it.
+    if (delay &#x3c; clientDelay) delay += step;
+
+    timeout = setTimeout(function prepare() {
+      stop1 = new Date(Math.floor((Date.now() - serverDelay) / step) * step);
+      start1 = new Date(stop1 - size * step);
+      event.prepare.call(context, start1, stop1);
+
+      setTimeout(function() {
+        scale.domain([start0 = start1, stop0 = stop1]);
+        event.beforechange.call(context, start1, stop1);
+        event.change.call(context, start1, stop1);
+        event.focus.call(context, focus);
+      }, clientDelay);
+
+      timeout = setTimeout(prepare, step);
+    }, delay);
+    return context;
+  };
+
+  context.stop = function() {
+    timeout = clearTimeout(timeout);
+    return context;
+  };
+
+  timeout = setTimeout(context.start, 10);
+
+  // Set or get the step interval in milliseconds.
+  // Defaults to ten seconds.
+  context.step = function(_) {
+    if (!arguments.length) return step;
+    step = +_;
+    return update();
+  };
+
+  // Set or get the context size (the count of metric values).
+  // Defaults to 1440 (four hours at ten seconds).
+  context.size = function(_) {
+    if (!arguments.length) return size;
+    scale.range([0, size = +_]);
+    return update();
+  };
+
+  // The server delay is the amount of time we wait for the server to compute a
+  // metric. This delay may result from clock skew or from delays collecting
+  // metrics from various hosts. Defaults to 4 seconds.
+  context.serverDelay = function(_) {
+    if (!arguments.length) return serverDelay;
+    serverDelay = +_;
+    return update();
+  };
+
+  // The client delay is the amount of additional time we wait to fetch those
+  // metrics from the server. The client and server delay combined represent the
+  // age of the most recent displayed metric. Defaults to 1 second.
+  context.clientDelay = function(_) {
+    if (!arguments.length) return clientDelay;
+    clientDelay = +_;
+    return update();
+  };
+
+  // Sets the focus to the specified index, and dispatches a &#x22;focus&#x22; event.
+  context.focus = function(i) {
+    event.focus.call(context, focus = i);
+    return context;
+  };
+
+  // Add, remove or get listeners for events.
+  context.on = function(type, listener) {
+    if (arguments.length &#x3c; 2) return event.on(type);
+
+    event.on(type, listener);
+
+    // Notify the listener of the current start and stop time, as appropriate.
+    // This way, metrics can make requests for data immediately,
+    // and likewise the axis can display itself synchronously.
+    if (listener != null) {
+      if (/^prepare(\.|$)/.test(type)) listener.call(context, start1, stop1);
+      if (/^beforechange(\.|$)/.test(type)) listener.call(context, start0, stop0);
+      if (/^change(\.|$)/.test(type)) listener.call(context, start0, stop0);
+      if (/^focus(\.|$)/.test(type)) listener.call(context, focus);
+    }
+
+    return context;
+  };
+
+  d3.select(window).on(&#x22;keydown.context-&#x22; + ++cubism_id, function() {
+    switch (!d3.event.metaKey &#x26;&#x26; d3.event.keyCode) {
+      case 37: // left
+        if (focus == null) focus = size - 1;
+        if (focus &#x3e; 0) context.focus ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cubism.context.prototype" id="apidoc.module.cubism.context.prototype">module cubism.context.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.axis" id="apidoc.element.cubism.context.prototype.axis">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>axis
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">axis = function () {
+  var context = this,
+      scale = context.scale,
+      axis_ = d3.svg.axis().scale(scale);
+
+  var formatDefault = context.step() &#x3c; 6e4 ? cubism_axisFormatSeconds
+      : context.step() &#x3c; 864e5 ? cubism_axisFormatMinutes
+      : cubism_axisFormatDays;
+  var format = formatDefault;
+
+  function axis(selection) {
+    var id = ++cubism_id,
+        tick;
+
+    var g = selection.append(&#x22;svg&#x22;)
+        .datum({id: id})
+        .attr(&#x22;width&#x22;, context.size())
+        .attr(&#x22;height&#x22;, Math.max(28, -axis.tickSize()))
+      .append(&#x22;g&#x22;)
+        .attr(&#x22;transform&#x22;, &#x22;translate(0,&#x22; + (axis_.orient() === &#x22;top&#x22; ? 27 : 4) + &#x22;)&#x22;)
+        .call(axis_);
+
+    context.on(&#x22;change.axis-&#x22; + id, function() {
+      g.call(axis_);
+      if (!tick) tick = d3.select(g.node().appendChild(g.selectAll(&#x22;text&#x22;).node().cloneNode(true)))
+          .style(&#x22;display&#x22;, &#x22;none&#x22;)
+          .text(null);
+    });
+
+    context.on(&#x22;focus.axis-&#x22; + id, function(i) {
+      if (tick) {
+        if (i == null) {
+          tick.style(&#x22;display&#x22;, &#x22;none&#x22;);
+          g.selectAll(&#x22;text&#x22;).style(&#x22;fill-opacity&#x22;, null);
+        } else {
+          tick.style(&#x22;display&#x22;, null).attr(&#x22;x&#x22;, i).text(format(scale.invert(i)));
+          var dx = tick.node().getComputedTextLength() + 6;
+          g.selectAll(&#x22;text&#x22;).style(&#x22;fill-opacity&#x22;, function(d) { return Math.abs(scale(d) - i) &#x3c; dx ? 0 : 1; });
+        }
+      }
+    });
+  }
+
+  axis.remove = function(selection) {
+
+    selection.selectAll(&#x22;svg&#x22;)
+        .each(remove)
+        .remove();
+
+    function remove(d) {
+      context.on(&#x22;change.axis-&#x22; + d.id, null);
+      context.on(&#x22;focus.axis-&#x22; + d.id, null);
+    }
+  };
+
+  axis.focusFormat = function(_) {
+    if (!arguments.length) return format == formatDefault ? null : _;
+    format = _ == null ? formatDefault : _;
+    return axis;
+  };
+
+  return d3.rebind(axis, axis_,
+      &#x22;orient&#x22;,
+      &#x22;ticks&#x22;,
+      &#x22;tickSubdivide&#x22;,
+      &#x22;tickSize&#x22;,
+      &#x22;tickPadding&#x22;,
+      &#x22;tickFormat&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function cubism_comparisonRoundOdd(i) {
+return ((i + 1) &#x26; 0xfffffe) - 1;
+}
+cubism_contextPrototype.axis = function() {
+var context = this,
+    scale = context.scale,
+    axis_ = d3.svg.<span class="apidocCodeKeywordSpan">axis</span>().scale(scale);
+
+var formatDefault = context.step() &#x3c; 6e4 ? cubism_axisFormatSeconds
+    : context.step() &#x3c; 864e5 ? cubism_axisFormatMinutes
+    : cubism_axisFormatDays;
+var format = formatDefault;
+
+function axis(selection) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.comparison" id="apidoc.element.cubism.context.prototype.comparison">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>comparison
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">comparison = function () {
+  var context = this,
+      width = context.size(),
+      height = 120,
+      scale = d3.scale.linear().interpolate(d3.interpolateRound),
+      primary = function(d) { return d[0]; },
+      secondary = function(d) { return d[1]; },
+      extent = null,
+      title = cubism_identity,
+      formatPrimary = cubism_comparisonPrimaryFormat,
+      formatChange = cubism_comparisonChangeFormat,
+      colors = [&#x22;#9ecae1&#x22;, &#x22;#225b84&#x22;, &#x22;#a1d99b&#x22;, &#x22;#22723a&#x22;],
+      strokeWidth = 1.5;
+
+  function comparison(selection) {
+
+    selection
+        .on(&#x22;mousemove.comparison&#x22;, function() { context.focus(Math.round(d3.mouse(this)[0])); })
+        .on(&#x22;mouseout.comparison&#x22;, function() { context.focus(null); });
+
+    selection.append(&#x22;canvas&#x22;)
+        .attr(&#x22;width&#x22;, width)
+        .attr(&#x22;height&#x22;, height);
+
+    selection.append(&#x22;span&#x22;)
+        .attr(&#x22;class&#x22;, &#x22;title&#x22;)
+        .text(title);
+
+    selection.append(&#x22;span&#x22;)
+        .attr(&#x22;class&#x22;, &#x22;value primary&#x22;);
+
+    selection.append(&#x22;span&#x22;)
+        .attr(&#x22;class&#x22;, &#x22;value change&#x22;);
+
+    selection.each(function(d, i) {
+      var that = this,
+          id = ++cubism_id,
+          primary_ = typeof primary === &#x22;function&#x22; ? primary.call(that, d, i) : primary,
+          secondary_ = typeof secondary === &#x22;function&#x22; ? secondary.call(that, d, i) : secondary,
+          extent_ = typeof extent === &#x22;function&#x22; ? extent.call(that, d, i) : extent,
+          div = d3.select(that),
+          canvas = div.select(&#x22;canvas&#x22;),
+          spanPrimary = div.select(&#x22;.value.primary&#x22;),
+          spanChange = div.select(&#x22;.value.change&#x22;),
+          ready;
+
+      canvas.datum({id: id, primary: primary_, secondary: secondary_});
+      canvas = canvas.node().getContext(&#x22;2d&#x22;);
+
+      function change(start, stop) {
+        canvas.save();
+        canvas.clearRect(0, 0, width, height);
+
+        // update the scale
+        var primaryExtent = primary_.extent(),
+            secondaryExtent = secondary_.extent(),
+            extent = extent_ == null ? primaryExtent : extent_;
+        scale.domain(extent).range([height, 0]);
+        ready = primaryExtent.concat(secondaryExtent).every(isFinite);
+
+        // consistent overplotting
+        var round = start / context.step() &#x26; 1
+            ? cubism_comparisonRoundOdd
+            : cubism_comparisonRoundEven;
+
+        // positive changes
+        canvas.fillStyle = colors[2];
+        for (var i = 0, n = width; i &#x3c; n; ++i) {
+          var y0 = scale(primary_.valueAt(i)),
+              y1 = scale(secondary_.valueAt(i));
+          if (y0 &#x3c; y1) canvas.fillRect(round(i), y0, 1, y1 - y0);
+        }
+
+        // negative changes
+        canvas.fillStyle = colors[0];
+        for (i = 0; i &#x3c; n; ++i) {
+          var y0 = scale(primary_.valueAt(i)),
+              y1 = scale(secondary_.valueAt(i));
+          if (y0 &#x3e; y1) canvas.fillRect(round(i), y1, 1, y0 - y1);
+        }
+
+        // positive values
+        canvas.fillStyle = colors[3];
+        for (i = 0; i &#x3c; n; ++i) {
+          var y0 = scale(primary_.valueAt(i)),
+              y1 = scale(secondary_.valueAt(i));
+          if (y0 &#x3c;= y1) canvas.fillRect(round(i), y0, 1, strokeWidth);
+        }
+
+        // negative values
+        canvas.fillStyle = colors[1];
+        for (i = 0; i &#x3c; n; ++i) {
+          var y0 = scale(primary_.valueAt(i)),
+              y1 = scale(secondary_.valueAt(i));
+          if (y0 &#x3e; y1) canvas.fillRect(round(i), y0 - strokeWidth, 1, strokeWidth);
+        }
+
+        canvas.restore();
+      }
+
+      function focus(i) {
+        if (i == null) i = width - 1;
+        var valuePrimary = primary_.valueAt(i),
+            valueSecondary = secondary_.valueAt(i),
+            valueChange = (valuePrimary - valueSecondary) / valueSecondary;
+
+        spanPrimary
+            .datum(valuePrimary)
+            .text(isNaN(valuePrimary) ? null : formatPrimary);
+
+        spanChange
+            .datum(valueChange)
+            .text(isNaN(valueChange) ? null : formatChange)
+            .attr(&#x22;class&#x22;, &#x22;value change &#x22; + (valueChange &#x3e; 0 ? &#x22;positive&#x22; : valueChange &#x3c; 0 ? &#x22;negative&#x22; : &#x22;&#x22;));
+      }
+
+      // Display the first primary change immedi ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.constant" id="apidoc.element.cubism.context.prototype.constant">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>constant
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constant = function (value) {
+  return new cubism_metricConstant(this, +value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.cube" id="apidoc.element.cubism.context.prototype.cube">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>cube
+        <span class="apidocSignatureSpan">(host)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cube = function (host) {
+  if (!arguments.length) host = &#x22;&#x22;;
+  var source = {},
+      context = this;
+
+  source.metric = function(expression) {
+    return context.metric(function(start, stop, step, callback) {
+      d3.json(host + &#x22;/1.0/metric&#x22;
+          + &#x22;?expression=&#x22; + encodeURIComponent(expression)
+          + &#x22;&#x26;start=&#x22; + cubism_cubeFormatDate(start)
+          + &#x22;&#x26;stop=&#x22; + cubism_cubeFormatDate(stop)
+          + &#x22;&#x26;step=&#x22; + step, function(data) {
+        if (!data) return callback(new Error(&#x22;unable to load data&#x22;));
+        callback(null, data.map(function(d) { return d.value; }));
+      });
+    }, expression += &#x22;&#x22;);
+  };
+
+  // Returns the Cube host.
+  source.toString = function() {
+    return host;
+  };
+
+  return source;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.gangliaWeb" id="apidoc.element.cubism.context.prototype.gangliaWeb">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>gangliaWeb
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gangliaWeb = function (config) {
+  var host = &#x27;&#x27;,
+      uriPathPrefix = &#x27;/ganglia2/&#x27;;
+
+  if (arguments.length) {
+    if (config.host) {
+      host = config.host;
+    }
+
+    if (config.uriPathPrefix) {
+      uriPathPrefix = config.uriPathPrefix;
+
+<span class="apidocCodeCommentSpan">      /* Add leading and trailing slashes, as appropriate. */
+</span>      if( uriPathPrefix[0] != &#x27;/&#x27; ) {
+        uriPathPrefix = &#x27;/&#x27; + uriPathPrefix;
+      }
+
+      if( uriPathPrefix[uriPathPrefix.length - 1] != &#x27;/&#x27; ) {
+        uriPathPrefix += &#x27;/&#x27;;
+      }
+    }
+  }
+
+  var source = {},
+      context = this;
+
+  source.metric = function(metricInfo) {
+
+    /* Store the members from metricInfo into local variables. */
+    var clusterName = metricInfo.clusterName,
+        metricName = metricInfo.metricName,
+        hostName = metricInfo.hostName,
+        isReport = metricInfo.isReport || false,
+        titleGenerator = metricInfo.titleGenerator ||
+          /* Reasonable (not necessarily pretty) default for titleGenerator. */
+          function(unusedMetricInfo) {
+            /* unusedMetricInfo is, well, unused in this default case. */
+            return (&#x27;clusterName:&#x27; + clusterName +
+                    &#x27; metricName:&#x27; + metricName +
+                    (hostName ? &#x27; hostName:&#x27; + hostName : &#x27;&#x27;));
+          },
+        onChangeCallback = metricInfo.onChangeCallback;
+
+    /* Default to plain, simple metrics. */
+    var metricKeyName = isReport ? &#x27;g&#x27; : &#x27;m&#x27;;
+
+    var gangliaWebMetric = context.metric(function(start, stop, step, callback) {
+
+      function constructGangliaWebRequestQueryParams() {
+        return (&#x27;c=&#x27; + clusterName +
+                &#x27;&#x26;&#x27; + metricKeyName + &#x27;=&#x27; + metricName +
+                (hostName ? &#x27;&#x26;h=&#x27; + hostName : &#x27;&#x27;) +
+                &#x27;&#x26;cs=&#x27; + start/1000 + &#x27;&#x26;ce=&#x27; + stop/1000 + &#x27;&#x26;step=&#x27; + step/1000 + &#x27;&#x26;graphlot=1&#x27;);
+      }
+
+      d3.json(host + uriPathPrefix + &#x27;graph.php?&#x27; + constructGangliaWebRequestQueryParams(),
+        function(result) {
+          if( !result ) {
+            return callback(new Error(&#x22;Unable to fetch GangliaWeb data&#x22;));
+          }
+
+          callback(null, result[0].data);
+        });
+
+    }, titleGenerator(metricInfo));
+
+    gangliaWebMetric.toString = function() {
+      return titleGenerator(metricInfo);
+    };
+
+    /* Allow users to run their custom code each time a gangliaWebMetric changes.
+     *
+     * TODO Consider abstracting away the naked Cubism call, and instead exposing
+     * a callback that takes in the values array (maybe alongwith the original
+     * start and stop &#x27;naked&#x27; parameters), since it&#x27;s handy to have the entire
+     * dataset at your disposal (and users will likely implement onChangeCallback
+     * primarily to get at this dataset).
+     */
+    if (onChangeCallback) {
+      gangliaWebMetric.on(&#x27;change&#x27;, onChangeCallback);
+    }
+
+    return gangliaWebMetric;
+  };
+
+  // Returns the gangliaWeb host + uriPathPrefix.
+  source.toString = function() {
+    return host + uriPathPrefix;
+  };
+
+  return source;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.graphite" id="apidoc.element.cubism.context.prototype.graphite">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>graphite
+        <span class="apidocSignatureSpan">(host)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">graphite = function (host) {
+  if (!arguments.length) host = &#x22;&#x22;;
+  var source = {},
+      context = this;
+
+  source.metric = function(expression) {
+    var sum = &#x22;sum&#x22;;
+
+    var metric = context.metric(function(start, stop, step, callback) {
+      var target = expression;
+
+      // Apply the summarize, if necessary.
+      if (step !== 1e4) target = &#x22;summarize(&#x22; + target + &#x22;,&#x27;&#x22;
+          + (!(step % 36e5) ? step / 36e5 + &#x22;hour&#x22; : !(step % 6e4) ? step / 6e4 + &#x22;min&#x22; : step / 1e3 + &#x22;sec&#x22;)
+          + &#x22;&#x27;,&#x27;&#x22; + sum + &#x22;&#x27;)&#x22;;
+
+      d3.text(host + &#x22;/render?format=raw&#x22;
+          + &#x22;&#x26;target=&#x22; + encodeURIComponent(&#x22;alias(&#x22; + target + &#x22;,&#x27;&#x27;)&#x22;)
+          + &#x22;&#x26;from=&#x22; + cubism_graphiteFormatDate(start - 2 * step) // off-by-two?
+          + &#x22;&#x26;until=&#x22; + cubism_graphiteFormatDate(stop - 1000), function(text) {
+        if (!text) return callback(new Error(&#x22;unable to load data&#x22;));
+        callback(null, cubism_graphiteParse(text));
+      });
+    }, expression += &#x22;&#x22;);
+
+    metric.summarize = function(_) {
+      sum = _;
+      return metric;
+    };
+
+    return metric;
+  };
+
+  source.find = function(pattern, callback) {
+    d3.json(host + &#x22;/metrics/find?format=completer&#x22;
+        + &#x22;&#x26;query=&#x22; + encodeURIComponent(pattern), function(result) {
+      if (!result) return callback(new Error(&#x22;unable to find metrics&#x22;));
+      callback(null, result.metrics.map(function(d) { return d.path; }));
+    });
+  };
+
+  // Returns the graphite host.
+  source.toString = function() {
+    return host;
+  };
+
+  return source;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.horizon" id="apidoc.element.cubism.context.prototype.horizon">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>horizon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">horizon = function () {
+  var context = this,
+      mode = &#x22;offset&#x22;,
+      buffer = document.createElement(&#x22;canvas&#x22;),
+      width = buffer.width = context.size(),
+      height = buffer.height = 30,
+      scale = d3.scale.linear().interpolate(d3.interpolateRound),
+      metric = cubism_identity,
+      extent = null,
+      title = cubism_identity,
+      format = d3.format(&#x22;.2s&#x22;),
+      colors = [&#x22;#08519c&#x22;,&#x22;#3182bd&#x22;,&#x22;#6baed6&#x22;,&#x22;#bdd7e7&#x22;,&#x22;#bae4b3&#x22;,&#x22;#74c476&#x22;,&#x22;#31a354&#x22;,&#x22;#006d2c&#x22;];
+
+  function horizon(selection) {
+
+    selection
+        .on(&#x22;mousemove.horizon&#x22;, function() { context.focus(Math.round(d3.mouse(this)[0])); })
+        .on(&#x22;mouseout.horizon&#x22;, function() { context.focus(null); });
+
+    selection.append(&#x22;canvas&#x22;)
+        .attr(&#x22;width&#x22;, width)
+        .attr(&#x22;height&#x22;, height);
+
+    selection.append(&#x22;span&#x22;)
+        .attr(&#x22;class&#x22;, &#x22;title&#x22;)
+        .text(title);
+
+    selection.append(&#x22;span&#x22;)
+        .attr(&#x22;class&#x22;, &#x22;value&#x22;);
+
+    selection.each(function(d, i) {
+      var that = this,
+          id = ++cubism_id,
+          metric_ = typeof metric === &#x22;function&#x22; ? metric.call(that, d, i) : metric,
+          colors_ = typeof colors === &#x22;function&#x22; ? colors.call(that, d, i) : colors,
+          extent_ = typeof extent === &#x22;function&#x22; ? extent.call(that, d, i) : extent,
+          start = -Infinity,
+          step = context.step(),
+          canvas = d3.select(that).select(&#x22;canvas&#x22;),
+          span = d3.select(that).select(&#x22;.value&#x22;),
+          max_,
+          m = colors_.length &#x3e;&#x3e; 1,
+          ready;
+
+      canvas.datum({id: id, metric: metric_});
+      canvas = canvas.node().getContext(&#x22;2d&#x22;);
+
+      function change(start1, stop) {
+        canvas.save();
+
+        // compute the new extent and ready flag
+        var extent = metric_.extent();
+        ready = extent.every(isFinite);
+        if (extent_ != null) extent = extent_;
+
+        // if this is an update (with no extent change), copy old values!
+        var i0 = 0, max = Math.max(-extent[0], extent[1]);
+        if (this === context) {
+          if (max == max_) {
+            i0 = width - cubism_metricOverlap;
+            var dx = (start1 - start) / step;
+            if (dx &#x3c; width) {
+              var canvas0 = buffer.getContext(&#x22;2d&#x22;);
+              canvas0.clearRect(0, 0, width, height);
+              canvas0.drawImage(canvas.canvas, dx, 0, width - dx, height, 0, 0, width - dx, height);
+              canvas.clearRect(0, 0, width, height);
+              canvas.drawImage(canvas0.canvas, 0, 0);
+            }
+          }
+          start = start1;
+        }
+
+        // update the domain
+        scale.domain([0, max_ = max]);
+
+        // clear for the new data
+        canvas.clearRect(i0, 0, width - i0, height);
+
+        // record whether there are negative values to display
+        var negative;
+
+        // positive bands
+        for (var j = 0; j &#x3c; m; ++j) {
+          canvas.fillStyle = colors_[m + j];
+
+          // Adjust the range based on the current band index.
+          var y0 = (j - m + 1) * height;
+          scale.range([m * height + y0, y0]);
+          y0 = scale(0);
+
+          for (var i = i0, n = width, y1; i &#x3c; n; ++i) {
+            y1 = metric_.valueAt(i);
+            if (y1 &#x3c;= 0) { negative = true; continue; }
+            if (y1 === undefined) continue;
+            canvas.fillRect(i, y1 = scale(y1), 1, y0 - y1);
+          }
+        }
+
+        if (negative) {
+          // enable offset mode
+          if (mode === &#x22;offset&#x22;) {
+            canvas.translate(0, height);
+            canvas.scale(1, -1);
+          }
+
+          // negative bands
+          for (var j = 0; j &#x3c; m; ++j) {
+            canvas.fillStyle = colors_[m - 1 - j];
+
+            // Adjust the range based on the current band index.
+            var y0 = (j - m + 1) * height;
+            scale.range([m * height + y0, y0]);
+            y0 = scale(0);
+
+            for (var i = i0, n = width, y1; i &#x3c; n; ++i) {
+              y1 = metric_.valueAt(i);
+              if (y1 &#x3e;= 0) continue;
+              canvas.fillRect(i, scale(-y1), 1, y0 - scale(-y1));
+            }
+          }
+        }
+
+        canvas.restore();
+      }
+
+      f ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.librato" id="apidoc.element.cubism.context.prototype.librato">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>librato
+        <span class="apidocSignatureSpan">(user, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">librato = function (user, token) {
+  var source      = {},
+      context     = this;
+      auth_string = &#x22;Basic &#x22; + btoa(user + &#x22;:&#x22; + token);
+      avail_rsts  = [ 1, 60, 900, 3600 ];
+
+<span class="apidocCodeCommentSpan">  /* Given a step, find the best librato resolution to use.
+   *
+   * Example:
+   *
+   * (s) : cubism step
+   *
+   * avail_rsts   1 --------------- 60 --------------- 900 ---------------- 3600
+   *                                |    (s)            |
+   *                                |                   |
+   *                              [low_res             top_res]
+   *
+   * return: low_res (60)
+   */
+</span>  function find_ideal_librato_resolution(step) {
+    var highest_res = avail_rsts[0],
+        lowest_res  = avail_rsts[avail_rsts.length]; // high and lowest available resolution from librato
+
+    /* If step is outside the highest or lowest librato resolution, pick them and we are done */
+    if (step &#x3e;= lowest_res)
+      return lowest_res;
+
+    if (step &#x3c;= highest_res)
+      return highest_res;
+
+    /* If not, find in what resolution interval the step lands. */
+    var iof, top_res, i;
+    for (i=step; i&#x3c;=lowest_res; i++) {
+      iof = avail_rsts.indexOf(i);
+      if (iof &#x3e; -1) {
+        top_res = avail_rsts[iof];
+        break;
+      }
+    }
+
+    var low_res;
+    for (i=step; i&#x3e;=highest_res; i--) {
+      iof = avail_rsts.indexOf(i);
+      if (iof &#x3e; -1) {
+        low_res = avail_rsts[iof];
+        break;
+      }
+    }
+
+    /* What&#x27;s the closest librato resolution given the step ? */
+    return ((top_res-step) &#x3c; (step-low_res)) ? top_res : low_res;
+  }
+
+  function find_librato_resolution(sdate, edate, step) {
+    var i_size      = edate - sdate,                 // interval size
+        month       = 2419200,
+        week        = 604800,
+        two_days    = 172800,
+        ideal_res;
+
+    if (i_size &#x3e; month)
+      return 3600;
+
+    ideal_res = find_ideal_librato_resolution(step);
+
+    /*
+     * Now we have the ideal resolution, but due to the retention policies at librato, maybe we have
+     * to use a higher resolution.
+     * http://support.metrics.librato.com/knowledgebase/articles/66838-understanding-metrics-roll-ups-retention-and-grap
+     */
+    if (i_size &#x3e; week &#x26;&#x26; ideal_res &#x3c; 900)
+      return 900;
+    else if (i_size &#x3e; two_days &#x26;&#x26; ideal_res &#x3c; 60)
+      return 60;
+    else
+      return ideal_res;
+  }
+
+  /* All the logic to query the librato API is here */
+  var librato_request = function(composite) {
+    var url_prefix  = &#x22;https://metrics-api.librato.com/v1/metrics&#x22;;
+
+    function make_url(sdate, edate, step) {
+      var params    = &#x22;compose=&#x22;     + composite +
+                      &#x22;&#x26;start_time=&#x22; + sdate     +
+                      &#x22;&#x26;end_time=&#x22;   + edate     +
+                      &#x22;&#x26;resolution=&#x22; + find_librato_resolution(sdate, edate, step);
+      return url_prefix + &#x22;?&#x22; + params;
+    }
+
+    /*
+     * We are most likely not going to get the same number of measurements
+     * cubism expects for a particular context: We have to perform down/up
+     * sampling
+     */
+    function down_up_sampling(isdate, iedate, step, librato_mm) {
+      var av = [];
+
+      for (i=isdate; i&#x3c;=iedate; i+=step) {
+        var int_mes = [];
+        while (librato_mm.length &#x26;&#x26; librato_mm[0].measure_time &#x3c;= i) {
+          int_mes.push(librato_mm.shift().value);
+        }
+
+        var v;
+        if (int_mes.length) { /* Compute the average */
+          v = int_mes.reduce(function(a, b) { return a + b }) / int_mes.length;
+        } else { /* No librato values on interval */
+          v = (av.length) ? av[av.length-1] : 0;
+        }
+        av.push(v);
+      }
+
+      return av;
+    }
+
+    request = {};
+
+    request.fire = function(isdate, iedate, step, callback_done) {
+      var a_values = []; /* Store partial values from librato */
+
+      /*
+       * Librato has a limit in the number of measurements we get back in a request (100).
+       * We recursively perform requests to the API to ensure we have all the data points
+       * for the interval we are working on.
+       */
+      function actual_request(full_url) {
+        d3.json(full_url)
+          .header(&#x22;X-Re ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.metric" id="apidoc.element.cubism.context.prototype.metric">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>metric
+        <span class="apidocSignatureSpan">(request, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">metric = function (request, name) {
+  var context = this,
+      metric = new cubism_metric(context),
+      id = &#x22;.metric-&#x22; + ++cubism_id,
+      start = -Infinity,
+      stop,
+      step = context.step(),
+      size = context.size(),
+      values = [],
+      event = d3.dispatch(&#x22;change&#x22;),
+      listening = 0,
+      fetching;
+
+  // Prefetch new data into a temporary array.
+  function prepare(start1, stop) {
+    var steps = Math.min(size, Math.round((start1 - start) / step));
+    if (!steps || fetching) return; // already fetched, or fetching!
+    fetching = true;
+    steps = Math.min(size, steps + cubism_metricOverlap);
+    var start0 = new Date(stop - steps * step);
+    request(start0, stop, step, function(error, data) {
+      fetching = false;
+      if (error) return console.warn(error);
+      var i = isFinite(start) ? Math.round((start0 - start) / step) : 0;
+      for (var j = 0, m = data.length; j &#x3c; m; ++j) values[j + i] = data[j];
+      event.change.call(metric, start, stop);
+    });
+  }
+
+  // When the context changes, switch to the new data, ready-or-not!
+  function beforechange(start1, stop1) {
+    if (!isFinite(start)) start = start1;
+    values.splice(0, Math.max(0, Math.min(size, Math.round((start1 - start) / step))));
+    start = start1;
+    stop = stop1;
+  }
+
+  //
+  metric.valueAt = function(i) {
+    return values[i];
+  };
+
+  //
+  metric.shift = function(offset) {
+    return context.metric(cubism_metricShift(request, +offset));
+  };
+
+  //
+  metric.on = function(type, listener) {
+    if (!arguments.length) return event.on(type);
+
+    // If there are no listeners, then stop listening to the context,
+    // and avoid unnecessary fetches.
+    if (listener == null) {
+      if (event.on(type) != null &#x26;&#x26; --listening == 0) {
+        context.on(&#x22;prepare&#x22; + id, null).on(&#x22;beforechange&#x22; + id, null);
+      }
+    } else {
+      if (event.on(type) == null &#x26;&#x26; ++listening == 1) {
+        context.on(&#x22;prepare&#x22; + id, prepare).on(&#x22;beforechange&#x22; + id, beforechange);
+      }
+    }
+
+    event.on(type, listener);
+
+    // Notify the listener of the current start and stop time, as appropriate.
+    // This way, charts can display synchronous metrics immediately.
+    if (listener != null) {
+      if (/^change(\.|$)/.test(type)) listener.call(context, start, stop);
+    }
+
+    return metric;
+  };
+
+  //
+  if (arguments.length &#x3e; 1) metric.toString = function() {
+    return name;
+  };
+
+  return metric;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+cubism_contextPrototype.cube = function(host) {
+if (!arguments.length) host = &#x22;&#x22;;
+var source = {},
+    context = this;
+
+source.metric = function(expression) {
+  return context.<span class="apidocCodeKeywordSpan">metric</span>(function(start, stop, step, callback) {
+    d3.json(host + &#x22;/1.0/metric&#x22;
+        + &#x22;?expression=&#x22; + encodeURIComponent(expression)
+        + &#x22;&#x26;start=&#x22; + cubism_cubeFormatDate(start)
+        + &#x22;&#x26;stop=&#x22; + cubism_cubeFormatDate(stop)
+        + &#x22;&#x26;step=&#x22; + step, function(data) {
+      if (!data) return callback(new Error(&#x22;unable to load data&#x22;));
+      callback(null, data.map(function(d) { return d.value; }));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.context.prototype.rule" id="apidoc.element.cubism.context.prototype.rule">
+        function <span class="apidocSignatureSpan">cubism.context.prototype.</span>rule
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rule = function () {
+  var context = this,
+      metric = cubism_identity;
+
+  function rule(selection) {
+    var id = ++cubism_id;
+
+    var line = selection.append(&#x22;div&#x22;)
+        .datum({id: id})
+        .attr(&#x22;class&#x22;, &#x22;line&#x22;)
+        .call(cubism_ruleStyle);
+
+    selection.each(function(d, i) {
+      var that = this,
+          id = ++cubism_id,
+          metric_ = typeof metric === &#x22;function&#x22; ? metric.call(that, d, i) : metric;
+
+      if (!metric_) return;
+
+      function change(start, stop) {
+        var values = [];
+
+        for (var i = 0, n = context.size(); i &#x3c; n; ++i) {
+          if (metric_.valueAt(i)) {
+            values.push(i);
+          }
+        }
+
+        var lines = selection.selectAll(&#x22;.metric&#x22;).data(values);
+        lines.exit().remove();
+        lines.enter().append(&#x22;div&#x22;).attr(&#x22;class&#x22;, &#x22;metric line&#x22;).call(cubism_ruleStyle);
+        lines.style(&#x22;left&#x22;, cubism_ruleLeft);
+      }
+
+      context.on(&#x22;change.rule-&#x22; + id, change);
+      metric_.on(&#x22;change.rule-&#x22; + id, change);
+    });
+
+    context.on(&#x22;focus.rule-&#x22; + id, function(i) {
+      line.datum(i)
+          .style(&#x22;display&#x22;, i == null ? &#x22;none&#x22; : null)
+          .style(&#x22;left&#x22;, i == null ? null : cubism_ruleLeft);
+    });
+  }
+
+  rule.remove = function(selection) {
+
+    selection.selectAll(&#x22;.line&#x22;)
+        .each(remove)
+        .remove();
+
+    function remove(d) {
+      context.on(&#x22;focus.rule-&#x22; + d.id, null);
+    }
+  };
+
+  rule.metric = function(_) {
+    if (!arguments.length) return metric;
+    metric = _;
+    return rule;
+  };
+
+  return rule;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cubism.metric" id="apidoc.module.cubism.metric">module cubism.metric</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.metric" id="apidoc.element.cubism.metric.metric">
+        function <span class="apidocSignatureSpan">cubism.</span>metric
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cubism_metric(context) {
+  if (!(context instanceof cubism_context)) throw new Error(&#x22;invalid context&#x22;);
+  this.context = context;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+cubism_contextPrototype.cube = function(host) {
+if (!arguments.length) host = &#x22;&#x22;;
+var source = {},
+    context = this;
+
+source.metric = function(expression) {
+  return context.<span class="apidocCodeKeywordSpan">metric</span>(function(start, stop, step, callback) {
+    d3.json(host + &#x22;/1.0/metric&#x22;
+        + &#x22;?expression=&#x22; + encodeURIComponent(expression)
+        + &#x22;&#x26;start=&#x22; + cubism_cubeFormatDate(start)
+        + &#x22;&#x26;stop=&#x22; + cubism_cubeFormatDate(stop)
+        + &#x22;&#x26;step=&#x22; + step, function(data) {
+      if (!data) return callback(new Error(&#x22;unable to load data&#x22;));
+      callback(null, data.map(function(d) { return d.value; }));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cubism.metric.prototype" id="apidoc.module.cubism.metric.prototype">module cubism.metric.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.add" id="apidoc.element.cubism.metric.prototype.add">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>add
+        <span class="apidocSignatureSpan">(right)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add = function (right) {
+  return new cubism_metricOperator(this, right);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.alias" id="apidoc.element.cubism.metric.prototype.alias">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>alias
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">alias = function (name) {
+  this.toString = function() { return name; };
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.divide" id="apidoc.element.cubism.metric.prototype.divide">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>divide
+        <span class="apidocSignatureSpan">(right)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">divide = function (right) {
+  return new cubism_metricOperator(this, right);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.extent" id="apidoc.element.cubism.metric.prototype.extent">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>extent
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extent = function () {
+  var i = 0,
+      n = this.context.size(),
+      value,
+      min = Infinity,
+      max = -Infinity;
+  while (++i &#x3c; n) {
+    value = this.valueAt(i);
+    if (value &#x3c; min) min = value;
+    if (value &#x3e; max) max = value;
+  }
+  return [min, max];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      canvas.datum({id: id, metric: metric_});
+      canvas = canvas.node().getContext(&#x22;2d&#x22;);
+
+      function change(start1, stop) {
+canvas.save();
+
+// compute the new extent and ready flag
+var extent = metric_.<span class="apidocCodeKeywordSpan">extent</span>();
+ready = extent.every(isFinite);
+if (extent_ != null) extent = extent_;
+
+// if this is an update (with no extent change), copy old values!
+var i0 = 0, max = Math.max(-extent[0], extent[1]);
+if (this === context) {
+  if (max == max_) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.multiply" id="apidoc.element.cubism.metric.prototype.multiply">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>multiply
+        <span class="apidocSignatureSpan">(right)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">multiply = function (right) {
+  return new cubism_metricOperator(this, right);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.on" id="apidoc.element.cubism.metric.prototype.on">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>on
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function () {
+  return arguments.length &#x3c; 2 ? null : this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  context.focus = function(i) {
+event.focus.call(context, focus = i);
+return context;
+  };
+
+  // Add, remove or get listeners for events.
+  context.on = function(type, listener) {
+if (arguments.length &#x3c; 2) return event.<span class="apidocCodeKeywordSpan">on</span>(type);
+
+event.on(type, listener);
+
+// Notify the listener of the current start and stop time, as appropriate.
+// This way, metrics can make requests for data immediately,
+// and likewise the axis can display itself synchronously.
+if (listener != null) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.shift" id="apidoc.element.cubism.metric.prototype.shift">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>shift
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shift = function () {
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     */
+    function down_up_sampling(isdate, iedate, step, librato_mm) {
+      var av = [];
+
+      for (i=isdate; i&#x3c;=iedate; i+=step) {
+var int_mes = [];
+while (librato_mm.length &#x26;&#x26; librato_mm[0].measure_time &#x3c;= i) {
+  int_mes.push(librato_mm.<span class="apidocCodeKeywordSpan">shift</span>().value);
+}
+
+var v;
+if (int_mes.length) { /* Compute the average */
+  v = int_mes.reduce(function(a, b) { return a + b }) / int_mes.length;
+} else { /* No librato values on interval */
+  v = (av.length) ? av[av.length-1] : 0;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.subtract" id="apidoc.element.cubism.metric.prototype.subtract">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>subtract
+        <span class="apidocSignatureSpan">(right)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">subtract = function (right) {
+  return new cubism_metricOperator(this, right);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cubism.metric.prototype.valueAt" id="apidoc.element.cubism.metric.prototype.valueAt">
+        function <span class="apidocSignatureSpan">cubism.metric.prototype.</span>valueAt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">valueAt = function () {
+  return NaN;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+cubism_metricPrototype.extent = function() {
+  var i = 0,
+      n = this.context.size(),
+      value,
+      min = Infinity,
+      max = -Infinity;
+  while (++i &#x3c; n) {
+    value = this.<span class="apidocCodeKeywordSpan">valueAt</span>(i);
+    if (value &#x3c; min) min = value;
+    if (value &#x3e; max) max = value;
+  }
+  return [min, max];
+};
+
+cubism_metricPrototype.on = function(type, listener) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
