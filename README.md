@@ -1,6 +1,6 @@
 # npmdoc-cubism
 
-#### api documentation for  [cubism (v1.6.0)](http://square.github.com/cubism/)  [![npm package](https://img.shields.io/npm/v/npmdoc-cubism.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cubism) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cubism.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cubism)
+#### basic api documentation for  [cubism (v1.6.0)](http://square.github.com/cubism/)  [![npm package](https://img.shields.io/npm/v/npmdoc-cubism.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cubism) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cubism.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cubism)
 
 #### A JavaScript library for time series visualization.
 
@@ -62,7 +62,8 @@
         "type": "git",
         "url": "git+ssh://git@github.com/square/cubism.git"
     },
-    "version": "1.6.0"
+    "version": "1.6.0",
+    "bin": {}
 }
 ```
 
